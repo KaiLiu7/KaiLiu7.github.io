@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            max-width: 800px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
         }
@@ -28,30 +28,46 @@
         a:hover {
             text-decoration: underline;
         }
+        
+        /* Flexbox container for the profile sections */
+        .profile-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        /* Basic Information section */
+        .basic-info {
+            flex: 2;
+            padding-right: 20px;
+        }
+
+        /* Additional Information section */
+        .additional-info {
+            flex: 1;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body>
 
     <header>
         <h1>Kai Liu's Personal Homepage</h1>
-        
-        <!-- Main container for the profile sections -->
-    <div class="profile-container">
-        <!--  -->
-        <section class="basic-info">
-            <h2> </h2>
-          <p>I am a Ph.D. candidate in the Department of Mathematics at the University of Central Florida (UCF), where I have been conducting research under the supervision of Prof. Deguang Han
-            since 2019. Alongside my studies, I serve as a Teaching Associate at UCF, delivering courses such as Calculus II, Calculus III, Ordinary Differential Equations,
-            Linear Algebra, and other foundational undergraduate classes. Prior to this, I completed my graduate studies at Beijing Institute of Technology, working with Prof. Lining Jiang
-            from 2016 to 2019.<p>
+    </header>
 
-        <p> My research is focused on the fields of quantum computing and quantum information theory, with a particular emphasis on leveraging advanced mathematical frameworks to deepen our understanding
-            of quantum systems. Specifically, I work on the development and application of mathematical tools—including frame theory, representation theory, and operator theory—to analyze
-            and describe the structural properties and dynamics of quantum channels, quantum entanglement, and quantum error correction. My goal is to bridge mathematical theory and quantum mechanics,
-            translating complex mathematical principles into practical insights that can reveal fundamental aspects of quantum systems and inform the design of quantum algorithms.
-            Through this approach, I aim to contribute to the broader understanding of quantum information processing and advance the potential applications of quantum computing.<p>
+    <!-- Main container for the profile sections -->
+    <div class="profile-container">
         
-        <p>Listed below are the recent activities, papers and manuscripts. </p>
+        <!-- Basic Information Section -->
+        <section class="basic-info">
+            <h2>About Me</h2>
+            <p>I am a Ph.D. candidate in the Department of Mathematics at the University of Central Florida (UCF), where I have been conducting research under the supervision of Prof. Deguang Han since 2019. Alongside my studies, I serve as a Teaching Associate at UCF, delivering courses such as Calculus II, Calculus III, Ordinary Differential Equations, Linear Algebra, and other foundational undergraduate classes. Prior to this, I completed my graduate studies at Beijing Institute of Technology, working with Prof. Lining Jiang from 2016 to 2019.</p>
+
+            <p>My research is focused on the fields of quantum computing and quantum information theory, with a particular emphasis on leveraging advanced mathematical frameworks to deepen our understanding of quantum systems. Specifically, I work on the development and application of mathematical tools—including frame theory, representation theory, and operator theory—to analyze and describe the structural properties and dynamics of quantum channels, quantum entanglement, and quantum error correction. My goal is to bridge mathematical theory and quantum mechanics, translating complex mathematical principles into practical insights that can reveal fundamental aspects of quantum systems and inform the design of quantum algorithms. Through this approach, I aim to contribute to the broader understanding of quantum information processing and advance the potential applications of quantum computing.</p>
+            
+            <p>Listed below are the recent activities, papers, and manuscripts.</p>
         </section>
 
         <!-- Additional Information Section -->
@@ -62,7 +78,6 @@
             <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/johndoe" target="_blank">John Doe</a></p>
         </aside>
     </div>
-    </section>
 
     <section class="section" id="research-interests">
         <h2>Research Interests</h2>
@@ -78,14 +93,12 @@
         <h2>Recent Talks</h2>
         <div class="item">
             <h3>1. "Frames and Generalized phase damping quantum channels" - UCF October 2024</h3>
-            <p>An introduction about generalized phase damping channel, decoherence and behavious of frame vectors under such quantum channels.</p>
+            <p>An introduction about generalized phase damping channel, decoherence, and behavior of frame vectors under such quantum channels.</p>
         </div>
         <div class="item">
             <h3>2. "Fidelity preserving under mixed unitary quantum errors" - UCF, April 2024</h3>
-            <p>“A comprehensive analysis of the behavior of mixed unitary quantum channels and their role in preserving fidelity between quantum states in the presence of this type of error.”</p>
-            
+            <p>A comprehensive analysis of the behavior of mixed unitary quantum channels and their role in preserving fidelity between quantum states in the presence of this type of error.</p>
         </div>
-        <!-- Add more talks by copying the structure above -->
     </section>
 
     <section class="section" id="publications">
@@ -102,38 +115,18 @@
             <h3>3. K. Liu, C. Cheng, D. Han, <i>Orbit-injective covariant quantum channels</i>, Linear Algebra and its Applications, 2023.</h3>
             <p><a href="https://www.sciencedirect.com/science/article/pii/S0024379523001027" target="_blank">View pdf</a></p>
         </div>
-        <!-- Add more publications by copying the structure above -->
     </section>
 
     <section class="section" id="preprints">
         <h2>Preprints</h2>
         <div class="item">
             <h3>1. K. Liu, D. Han, <i>Fidelity preserving and decoherence for mixed unitary quantum channels</i>, arXiv preprint arXiv:2311.16359, 2023.</h3>
-            
-            <p><a href="https://arxiv.org/abs/2410.20117" target="_blank">View preprint</a></p>
-        </div>
-        <div class="item">
-            <h3>2. K. Liu, D. Han, <i>Phase retrievability of frames and quantum channels</i>, arXiv preprint arXiv:2410.20117, 2024.</h3>
-            
             <p><a href="https://arxiv.org/abs/2311.16359" target="_blank">View preprint</a></p>
         </div>
-        <!-- Add more preprints by copying the structure above -->
-    </section>
-
-
-     <section class="section" id="working projects and papers">
-        <h2>Working projects and papers</h2>
-        <div class="item">
-            <h3>1. K. Liu, D. Han, <i>Fidelity preserving and decoherence for mixed unitary quantum channels</i>, arXiv preprint arXiv:2311.16359, 2023.</h3>
-            
-            
-        </div>
         <div class="item">
             <h3>2. K. Liu, D. Han, <i>Phase retrievability of frames and quantum channels</i>, arXiv preprint arXiv:2410.20117, 2024.</h3>
-            
-            
+            <p><a href="https://arxiv.org/abs/2410.20117" target="_blank">View preprint</a></p>
         </div>
-        <!-- Add more preprints by copying the structure above -->
     </section>
 
 </body>
