@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kailiu7.github.io/sitemap.xml

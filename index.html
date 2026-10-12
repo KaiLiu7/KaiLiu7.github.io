@@ -1,147 +1,162 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Homepage</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1, h2, h3 {
-            color: #333;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-        .item {
-            margin-bottom: 15px;
-        }
-        a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        
-        /* Flexbox container for the profile sections */
-        .profile-container {
-            display: flex;
-            justify-content: space-between;
-        }
-        
-        /* Basic Information section */
-        .basic-info {
-            flex: 2;
-            padding-right: 20px;
-        }
-
-        /* Additional Information section */
-        .additional-info {
-            flex: 1;
-            background-color: #f9f9f9;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Kai Liu</title>
+  <meta name="description" content="Kai Liu, UCF postdoctoral scholar: mathematical foundations of quantum information, quantum physics and control, computing, machine learning, and data science.">
+  <meta name="author" content="Kai Liu">
+  <link rel="canonical" href="https://kailiu7.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Home | Kai Liu">
+  <meta property="og:description" content="Kai Liu, UCF postdoctoral scholar: mathematical foundations of quantum information, quantum physics and control, computing, machine learning, and data science.">
+  <meta property="og:url" content="https://kailiu7.github.io/">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/site.js" defer></script>
 </head>
-<body>
-
-    <header>
-        <h1>Kai Liu's Personal Homepage</h1>
-    </header>
-
-    <!-- Main container for the profile sections -->
-    <div class="profile-container">
-        
-        <!-- Basic Information Section -->
-        <section class="basic-info">
-            <h2>About Me</h2>
-            <p>I am a Postdoctoral Scholar in the Department of Mathematics at the University of Central Florida (UCF), where I have been conducting research under the supervision of Prof. Deguang Han since 2019. Alongside my studies, I serve as a Teaching Associate at UCF, delivering courses such as Calculus II, Calculus III, Ordinary Differential Equations, Linear Algebra, and other foundational undergraduate classes. Prior to this, I completed my graduate studies at Beijing Institute of Technology, working with Prof. Lining Jiang from 2016 to 2019.</p>
-
-            <p>My research is focused on the fields of quantum computing and quantum information theory, with a particular emphasis on leveraging advanced mathematical frameworks to deepen our understanding of quantum systems. Specifically, I work on the development and application of mathematical tools—including frame theory, representation theory, and operator theory—to analyze and describe the structural properties and dynamics of quantum channels, quantum entanglement, and quantum error correction. My goal is to bridge mathematical theory and quantum mechanics, translating complex mathematical principles into practical insights that can reveal fundamental aspects of quantum systems and inform the design of quantum algorithms. Through this approach, I aim to contribute to the broader understanding of quantum information processing and advance the potential applications of quantum computing.</p>
-            
-            <p>Listed below are the recent activities, papers, and manuscripts.</p>
-        </section>
-
-        <!-- Additional Information Section -->
-        <aside class="additional-info">
-            <h2>Additional Information</h2>
-            <p><strong>Email:</strong> kai.liu@ucf.edu, link9527@outlook.com</p>
-            <p><strong>Affiliation:</strong> Department of Mathematics, University of Central Florida</p>
-            <p><strong>Location:</strong> Orlando, FL, USA</p>
-            <p><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?hl=en&user=oCgk-qEAAAAJ" target="_blank">Kai Liu</a></p>
-            <p><strong>ORCID:</strong> <a href="https://orcid.org/0000-0002-7549-7782" target="_blank">Kai Liu</a></p>
-        </aside>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+<div class="header-inner">
+      <a class="site-name" href="index.html">Kai Liu<span>Mathematics, quantum information and quantum computing</span></a>
+      <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false">Menu <span aria-hidden="true">☰</span></button>
+<nav id="site-nav" class="site-nav" aria-label="Main navigation"><a href="index.html" class="nav-link active" aria-current="page">Home</a>
+<a href="publications.html" class="nav-link">Publications</a>
+<a href="research-activities.html" class="nav-link">Research activities</a>
+<a href="teaching.html" class="nav-link">Teaching</a>
+<a href="contact.html" class="nav-link">Contact</a></nav>
     </div>
-
-    <section class="section" id="research-interests">
-        <h2>Research Interests</h2>
-        <ul>
-            <li>Quantum Computing and Quantum Information Theory</li>
-            <li>Quantum Tomography</li>
-            <li>Frame Theory and Representation Theory</li>
-            <li>Applied and Abstract Harmonic Analysis</li>
-        </ul>
-    </section>
-
-    <section class="section" id="talks">
-        <h2>Recent Talks</h2>
-        <div class="item">
-            <h3>1. "Frames and Generalized phase damping quantum channels" - UCF October 2024</h3>
-            <p>An introduction about generalized phase damping channel, decoherence, and behavior of frame vectors under such quantum channels.</p>
-        </div>
-        <div class="item">
-            <h3>2. "Fidelity preserving under mixed unitary quantum errors" - UCF, April 2024</h3>
-            <p>A comprehensive analysis of the behavior of mixed unitary quantum channels and their role in preserving fidelity between quantum states in the presence of this type of error.</p>
-        </div>
-    </section>
-
-    <section class="section" id="publications">
-        <h2>Publications</h2>
-        <div class="item">
-            <h3>1. D. Han, K. Liu, <i>Frame dimension functions and phase retrievability</i>, Advances in Operator Theory, 2024.</h3>
-            <p><a href="https://link.springer.com/article/10.1007/s43036-024-00331-y" target="_blank">View pdf</a></p>
-        </div>
-        <div class="item">
-            <h3>2. D. Han, K. Liu, <i>Zero-error correctibility and phase retrievability for twirling channels</i>, Reports on Mathematical Physics, 2024.</h3>
-            <p><a href="https://www.sciencedirect.com/science/article/pii/S0034487724000120" target="_blank">View pdf</a></p>
-        </div>
-        <div class="item">
-            <h3>3. K. Liu, C. Cheng, D. Han, <i>Orbit-injective covariant quantum channels</i>, Linear Algebra and its Applications, 2023.</h3>
-            <p><a href="https://www.sciencedirect.com/science/article/pii/S0024379523001027" target="_blank">View pdf</a></p>
-        </div>
-    </section>
-
-    <section class="section" id="preprints">
-        <h2>Preprints</h2>
-        <div class="item">
-            <h3>1. K. Liu, D. Han, <i>Fidelity preserving and decoherence for mixed unitary quantum channels</i>, arXiv preprint arXiv:2311.16359, 2023.</h3>
-            <p><a href="https://arxiv.org/abs/2311.16359" target="_blank">View preprint</a></p>
-        </div>
-        <div class="item">
-            <h3>2. K. Liu, D. Han, <i>Phase retrievability of frames and quantum channels</i>, arXiv preprint arXiv:2410.20117, 2024.</h3>
-            <p><a href="https://arxiv.org/abs/2410.20117" target="_blank">View preprint</a></p>
-        </div>
-    </section>
-
-    <section class="section" id="working projects and papers">
-        <h2>Working projects and papers</h2>
-        <div class="item">
-            <h3>1. <i>Fidelity estimation under group representations and symmetric quantum channels</i>.</h3>
-            
-        </div>
-        <div class="item">
-            <h3>2.  <i>Pearson parameter of quantum channel correlations</i>.</h3>
-            
-        </div>
-    </section>
-
+  </header>
+  <main id="main" class="container">
+<section class="home-intro" aria-labelledby="profile-name">
+<aside class="profile">
+    <!-- Optional portrait: add your photo to assets/kai-liu.jpg, then see README.md. -->
+<p class="eyebrow">University of Central Florida</p>
+<h1 id="profile-name">Kai Liu</h1>
+<p class="profile-fields">Mathematics, quantum information and quantum computing</p>
+<p class="profile-role">Postdoctoral Scholar</p>
+<p class="profile-school"><a href="https://sciences.ucf.edu/sdmss/">Dr. Yvette Kanouff School of Data, Mathematical, and Statistical Sciences</a></p>
+<p class="profile-location">Orlando, Florida</p>
+<div class="profile-emails"><a href="mailto:kai.liu@ucf.edu">kai.liu@ucf.edu</a><a href="mailto:link9528@outlook.com">link9528@outlook.com</a></div>
+<p><a href="files/kai-liu-cv.pdf" class="button">Curriculum vitae <span aria-hidden="true">↓</span></a></p>
+<div class="profile-links"><a href="https://scholar.google.com/citations?hl=en&amp;user=oCgk-qEAAAAJ">Google Scholar ↗</a><a href="https://orcid.org/0000-0002-7549-7782">ORCID ↗</a><a href="https://www.scopus.com/authid/detail.uri?authorId=55729581500">Scopus ↗</a></div>
+  </aside>
+<div class="about">
+<p class="eyebrow">About me</p>
+<h2>Mathematics in quantum information, computing, and applications</h2>
+<p>I am a postdoctoral scholar at the University of Central Florida. My research explores the <strong>mathematical foundations of quantum information and quantum computing</strong>, connecting ideas from analysis and geometry with quantum physics and data science.</p>
+<p>I investigate how the structure of quantum systems shapes what can be measured, reconstructed, and preserved. Connections among harmonic and functional analysis, operator algebras, frame theory, and group representations allow me to relate abstract mathematical questions to physical mechanisms such as interference and dissipation. This exchange between mathematics and physics guides my work on quantum measurements, dynamics, and information protection.</p>
+<p>Building on these foundations, my broader research program extends toward quantum control, quantum machine learning, and mathematical data science, with an emphasis on reliable computation, learning, and inference under noise and limited measurements.</p>
+<p>I received my Ph.D. in Mathematics from UCF in 2025 under the supervision of Deguang Han.</p>
+<div class="intro-columns">
+<section>
+<h3>Research interests</h3>
+<ul class="interest-list">
+<li>Frame theory and phase retrieval; harmonic and functional analysis</li>
+<li>Operator theory, operator algebras, and representation theory</li>
+<li>Quantum tomography, measurement, and information preservation</li>
+<li>Open quantum systems, quantum dynamics, and quantum control</li>
+<li>Quantum algorithms, error correction, fault tolerance, and computational advantage</li>
+<li>Quantum machine learning, machine learning, and mathematical data science</li>
+</ul>
+</section>
+<section>
+<h3>Education</h3>
+<p class="degree"><strong>Ph.D. in Mathematics</strong><br>University of Central Florida · 2025</p>
+<p class="degree"><strong>M.S. in Mathematics</strong><br>University of Central Florida · 2021</p>
+<p class="degree"><strong>M.S. in Mathematics and Applied Mathematics</strong><br>Beijing Institute of Technology · 2019</p>
+</section>
+</div>
+  </div>
+</section>
+<section class="home-section" aria-labelledby="work-title">
+<div class="section-heading">
+<div>
+<p class="eyebrow">Research</p>
+<h2 id="work-title">What I work on</h2>
+</div>
+<a href="files/research-statement.pdf" class="text-link">Research statement (PDF) ↗</a></div>
+<p class="section-intro">My research connects mathematical analysis, quantum physics, and the science of information. Three complementary directions examine the structures that make quantum information accessible, the physical processes that transform it, and its potential uses in computation, learning, and data analysis.</p>
+<div class="research-grid">
+<article><span class="theme-number">01</span>
+<h3>Mathematical foundations of quantum information</h3>
+<p>I study the geometric and algebraic structures underlying quantum states, measurements, and channels. My work connects frame theory, harmonic and functional analysis, operator algebras, and representation theory with tomography, state distinguishability, and information preservation. Questions from quantum information, in turn, motivate new problems in mathematical analysis.</p>
+</article>
+<article><span class="theme-number">02</span>
+<h3>Mathematical physics and quantum control</h3>
+<p>I investigate how dynamics, noise, and coherent interference shape access to quantum information. My work on fidelity preservation and interferometric coupling, together with ongoing research in dynamical tomography, connects mathematical analysis with open-system physics and motivates questions about quantum control and the realization of quantum processes.</p>
+</article>
+<article><span class="theme-number">03</span>
+<h3>Quantum computing, machine learning, and data science</h3>
+<p>Building on my work on quantum channels, error correction, and reconstruction, I aim to develop mathematical principles for reliable computation, learning, and inference. Developing directions include quantum data representations, quantum kernel learning, and estimation from noisy or incomplete measurements, connecting quantum information with the broader questions of data science.</p>
+</article>
+</div>
+<p class="section-more"><a href="research-activities.html#research-directions" class="text-link">Explore research directions and projects →</a></p>
+</section>
+<section class="home-section" aria-labelledby="selected-title">
+<div class="section-heading">
+<div>
+<p class="eyebrow">Writing</p>
+<h2 id="selected-title">Selected publications</h2>
+</div>
+<a href="publications.html" class="text-link">All publications →</a></div>
+<article class="publication compact" id="phase-2025">
+<h3>Phase retrievability of frames and quantum channels</h3>
+<p class="authors"><strong>Kai Liu</strong>, Deguang Han</p>
+<p class="publication-meta"><em>Linear Algebra and its Applications</em>, 725, 378–400, 2025.</p>
+  
+<p class="entry-links"><a href="https://www.sciencedirect.com/science/article/pii/S0024379525002988" class="text-link">Journal <span aria-hidden="true">↗</span></a></p>
+</article>
+<article class="publication compact" id="dimension-2024">
+<h3>Frame dimension functions and phase retrievability</h3>
+<p class="authors">Deguang Han, <strong>Kai Liu</strong></p>
+<p class="publication-meta"><em>Advances in Operator Theory</em>, 9, Article 31, 2024.</p>
+  
+<p class="entry-links"><a href="https://link.springer.com/article/10.1007/s43036-024-00331-y" class="text-link">Journal <span aria-hidden="true">↗</span></a></p>
+</article>
+</section>
+<section class="home-section" aria-labelledby="upcoming-home">
+<div class="section-heading">
+<div>
+<p class="eyebrow">Talks</p>
+<h2 id="upcoming-home">Upcoming presentations</h2>
+</div>
+<a href="research-activities.html#upcoming" class="text-link">All research activities →</a></div>
+<article class="talk" id="talk-1">
+<div class="talk-date"><time datetime="2027-01-12">January 12–15, 2027</time><span class="talk-type">Invited talk</span></div>
+<div>
+<h3>Frame phase retrievability and state distinguishability of quantum channels</h3>
+<p>Special Session on New Faces in Operator Theory<br>2027 Joint Mathematics Meetings</p>
+<p class="muted">Chicago, IL</p>
+<p class="entry-links"><a href="https://www.kentucky.maa.org/events/joint-mathematics-meeting" class="text-link">Event <span aria-hidden="true">↗</span></a></p>
+</div>
+</article>
+<article class="talk" id="talk-2">
+<div class="talk-date"><time datetime="2026-11-08">November 8, 2026</time><span class="talk-type">Invited talk</span></div>
+<div>
+<h3>Phase Retrievability of Quantum Channels and Interferometric Coupling</h3>
+<p>Special Session on Mathematical Aspects of Quantum Information and Computation, IV<br>2026 Fall Western Sectional Meeting</p>
+<p class="muted">Arizona State University, Tempe, AZ</p>
+<p class="entry-links"><a href="https://meetings.ams.org/math/fall2026w/meetingapp.cgi/Paper/66838" class="text-link">Program <span aria-hidden="true">↗</span></a></p>
+</div>
+</article>
+<article class="talk" id="talk-3">
+<div class="talk-date"><time datetime="2026-11-07">November 7, 2026</time><span class="talk-type">Invited talk</span></div>
+<div>
+<h3>Dynamical Sampling for Pure State Identification in Open Quantum Systems</h3>
+<p>Special Session on Recent Developments in Applied Harmonic Analysis, II<br>2026 Fall Western Sectional Meeting</p>
+<p class="muted">Arizona State University, Tempe, AZ</p>
+<p class="entry-links"><a href="https://meetings.ams.org/math/fall2026w/meetingapp.cgi/Paper/70053" class="text-link">Program <span aria-hidden="true">↗</span></a></p>
+</div>
+</article>
+</section>
+</main>
+  <footer class="site-footer">
+<div class="footer-inner">
+<p>© 2026 Kai Liu <span class="footer-dot">·</span> University of Central Florida</p>
+<p>Updated October 2026 <span class="footer-dot">·</span> <a href="#top">Back to top ↑</a></p>
+</div>
+</footer>
 </body>
 </html>
